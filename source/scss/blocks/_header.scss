@@ -1,0 +1,105 @@
+// .header {
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 22px clamp(30px, 4.167vw, 60px);
+//   grid-gap: clamp(16px, 2.222vw, 32px);
+//   z-index: 5;
+
+//   &__logo {
+//     position: relative;
+//     z-index: 30;
+//   }
+
+//   &__nav {
+//     flex-grow: 1;
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+//     padding-right: clamp(16px, 2.222vw, 32px);
+//     border-right: 1px solid var(--color-grey-stroke);
+
+//     @media screen and (max-width: 992px) {
+//       display: none;
+//       flex-grow: initial;
+//       border: none;
+//       padding-right: 0;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       opacity: 0;
+//       visibility: hidden;
+//     }
+//   }
+
+//   &__lang {
+//     @media screen and (max-width: 992px) {
+//       display: none;
+//     }
+//   }
+// }
+
+header {
+  position: relative;
+  padding: 25px 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  // &__logo {
+  //   position: relative;
+  //   z-index: 20;
+  // }
+
+  &__menu {
+    padding: 5px 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    background-color: var(--color-dark-bg);
+    border-radius: 100px;
+
+    a {
+      padding: 15px 20px;
+      background-color: transparent;
+      border-radius: 100px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--color-blue);
+      }
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+  }
+
+  &__btn {
+    position: relative;
+    grid-gap: 12px;
+    padding: 20px 50px;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--primary);
+    font-weight: 700;
+    background-color: var(--color-blue);
+    border-radius: 100px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-blue);
+    }
+  }
+}
+
+
