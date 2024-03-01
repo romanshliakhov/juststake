@@ -1,0 +1,170 @@
+.history {
+
+}
+
+
+
+
+.history-section {
+  padding-top: 40px
+}
+
+.history-section__title {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px
+}
+
+@media (min-width:768px) {
+  .history-section__title {
+      margin-bottom: 30px
+  }
+}
+
+@media (min-width:1200px) {
+  .history-section {
+      padding-top: 20px
+  }
+
+  .history-section__title {
+      margin-bottom: 20px
+  }
+}
+
+
+.history-table__header {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr 1fr 38px;
+  padding: 16px 15px
+}
+
+.history-table__body {
+  display: grid;
+  gap: 10px
+}
+
+.history-table__row {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr 1fr 38px;
+  align-items: center;
+  border-radius: 10px;
+  background: #151a37;
+  padding: 16px 15px
+}
+
+.history-table__header-col {
+  color: #999ec1;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.history-table__col {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+.history-table__date span:first-child {
+  display: none
+}
+
+.history-table__currency {
+  display: flex;
+  align-items: center
+}
+
+.history-table__currency img {
+  display: none
+}
+
+.history-table__status {
+  display: flex;
+  justify-content: flex-end
+}
+
+.history-table__status span {
+  display: none
+}
+
+.history-table__status img {
+  width: 15px
+}
+
+@media (min-width:768px) {
+  .history-table__header {
+      grid-template-columns: 1fr 1fr 1fr 1fr 65px
+  }
+
+  .history-table__header-col {
+      font-size: 14px
+  }
+
+  .history-table__header-col:first-child {
+      padding-left: 10px
+  }
+
+  .history-table__header-col:last-child {
+      text-align: right
+  }
+
+  .history-table__body {
+      gap: 15px
+  }
+
+  .history-table__row {
+      grid-template-columns: 1fr 1fr 1fr 1fr 65px;
+      padding: 18px 15px
+  }
+
+  .history-table__col {
+      font-size: 14px
+  }
+
+  .history-table__date span:first-child {
+      display: block
+  }
+
+  .history-table__date span:last-child {
+      display: none
+  }
+
+  .history-table__currency {
+      gap: 10px
+  }
+
+  .history-table__currency img {
+      display: block;
+      width: 24px;
+      height: auto
+  }
+
+  .history-table__status img {
+      display: none
+  }
+
+  .history-table__status span {
+      display: block
+  }
+}
+
+@media (min-width:1200px) {
+  .history-table__header {
+      padding: 0 40px 10px
+  }
+
+  .history-table__body {
+      gap: 10px
+  }
+
+  .history-table__row {
+      padding-left: 40px;
+      padding-right: 40px
+  }
+}

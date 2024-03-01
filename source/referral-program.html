@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="En">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <div class="container">
+        <section class="program">
+          <div class="rewards">
+            <span class="rewards__promo">EARN UP TO 5%</span>
+
+            <div class="rewards__top">
+              <div class="rewards__heading">My referral rewards</div>
+
+              <a class="rewards__more" href="#">
+                More details
+
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#angle-right'></use>
+                </svg>
+              </a>
+            </div>
+
+            <ul class="rewards__details">
+              <li class="rewards__detail">
+                <div class="rewards__detail-title">
+                  <span>Total referrals</span>
+
+                  <div class="tooltip">
+                    <svg class="tooltip__icon" width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#tooltip'></use>
+                    </svg>
+
+                    <div class="tooltip__content">text</div>
+                  </div>
+                </div>
+
+                <span class="rewards__detail-value">0 ETH</span>
+              </li>
+              <li class="rewards__detail">
+                <div class="rewards__detail-title">
+                  <span>Total profit</span>
+
+                  <div class="tooltip">
+                    <svg class="tooltip__icon" width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#tooltip'></use>
+                    </svg>
+
+                    <div class="tooltip__content">text</div>
+                  </div>
+                </div>
+
+                <span class="earnings__detail-value">0 ETH</sp>
+              </li>
+              <li class="earnings__detail">
+                <div class="rewards__detail-title">
+                  <span>Aviable for claim</span>
+
+                  <div class="tooltip">
+                    <svg class="tooltip__icon" width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#tooltip'></use>
+                    </svg>
+
+                    <div class="tooltip__content">text</div>
+                  </div>
+                </div>
+
+                <span class="rewards__detail-value">0 ETH</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="profit">
+            <div class="profit__heading">My profit</div>
+
+            <ul class="profit__details">
+              <li>
+                <div class="profit__detail">
+                  <div class="rewards__detail-title">
+                    <span>Aviable</span>
+
+                    <div class="tooltip">
+                      <svg class="tooltip__icon" width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#tooltip'></use>
+                      </svg>
+
+                      <div class="tooltip__content">text</div>
+                    </div>
+                  </div>
+
+                  <span class="rewards__detail-value">0 ETH</span>
+                </div>
+              </li>
+              <li>
+                <button class="profit__withdraw btn">Withdraw</button>
+              </li>
+              <li>
+                <div class="profit__detail">
+                  <div class="rewards__detail-title">
+                    <span>You recive</span>
+
+                    <div class="tooltip">
+                      <svg class="tooltip__icon" width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#tooltip'></use>
+                      </svg>
+
+                      <div class="tooltip__content">text</div>
+                    </div>
+                  </div>
+
+                  <span class="rewards__detail-value">10%</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="referral-link">
+            <div class="referral-link__heading">You referral link</div>
+
+            <div class="referral-link__details">
+              <div class="referral-link__info">juststake.com/ref=1203983vGb-e3jjm</div>
+              <button class="referral-link__btn btn">Copy link</button>
+            </div>
+          </div>
+
+          <div class="promo">
+            promo
+          </div>
+        </section>
+
+        <section class="history">
+          history
+        </section>
+      </div>
+    </main>
+
+    @include('partials/footer.html',{})
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

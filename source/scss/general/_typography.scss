@@ -5,11 +5,14 @@ h1 {
   letter-spacing: clamp(0.48px, 0.055vw, 0.56px);
 }
 
-h2 {
-  font-size: 32px;
-  line-height: 140%;
+h2, .subtitle {
+  font-size: 55px;
+  line-height: 110%;
   font-weight: 700;
-  letter-spacing: 0.32px;
+
+  span {
+    color: var(--color-blue);
+  }
 }
 
 h3, .heading {

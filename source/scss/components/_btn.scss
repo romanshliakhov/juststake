@@ -1,5 +1,88 @@
 .btn {
+  width: 100%;
+  padding: 17px 0;
+  background-color: var(--color-blue);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 700;
+  transition: all 0.4s ease;
+
+  &:hover,
+  &:active {
+    color: var(--color-blue);
+    background-color: var(--color-white);
+  }
+}
+
+.button {
+  padding: 0 115px 0 86px;
+  border-radius: 999px;
+  background: #2365fa;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a0810;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  height: 70px;
+  position: relative
+}
+
+.button__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  background: rgba(10, 8, 16, .13);
+  width: 69px;
+  height: 48px;
   display: flex;
   align-items: center;
-  grid-gap: 23px;
+  justify-content: center;
+  right: 23px
 }
+
+.button__icon svg {
+  width: 24px;
+  height: 24px
+}
+
+button.button {
+  border: none;
+  cursor: pointer
+}
+
+.play-button {
+  display: flex;
+  align-items: center;
+  gap: 15px
+}
+
+.play-button__icon {
+  width: 99px;
+  height: 55px;
+  border-radius: 90px;
+  background: #1a2044;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff
+}
+
+.play-button__icon svg {
+  width: 24px;
+  height: 24px
+}
+
+.play-button__text {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  width: 130px
+}
+

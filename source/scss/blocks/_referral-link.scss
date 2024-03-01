@@ -1,0 +1,34 @@
+.referral-link {
+  padding: 20px 29px 45px 25px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 24px;
+  border-radius: 21px;
+  background: linear-gradient(180deg, #151a37 0%, rgba(21, 26, 55, 0) 100%);
+
+  &__heading {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 700;
+  }
+
+  &__details {
+    display: grid;
+    grid-template-columns: 1fr 151px;
+    align-items: center;
+  }
+
+  &__info {
+    margin-right: -36px;
+    padding: 16px 26px 18px;
+    background-color: #0e1124;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
+  }
+
+  &__btn {
+    line-height: 150%;
+  }
+}

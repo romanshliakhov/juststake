@@ -1,0 +1,24 @@
+.staking-pools {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 24px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+
+  &__lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+
+
