@@ -1,6 +1,6 @@
 .referral {
   position: relative;
-  margin: 140px 0 100px;
+  margin: clamp(70px, 18.229vw, 140px) 0 clamp(80px, 13.021vw, 100px);
 
   &__info {
     margin-bottom: 75px;
@@ -11,7 +11,7 @@
   }
 
   &__descr {
-    font-size: 21px;
+    font-size: clamp(18px, 2.734vw, 21px);
     line-height: 114%;
   }
 

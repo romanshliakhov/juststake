@@ -1,5 +1,5 @@
 h1, .title {
-  font-size: 75px;
+  font-size: clamp(50px, 9.766vw, 75px);
   line-height: 120%;
   font-weight: 700;
 
@@ -9,40 +9,12 @@ h1, .title {
 }
 
 h2, .subtitle {
-  font-size: 55px;
+  font-size: clamp(45px, 7.161vw, 55px);
   line-height: 110%;
   font-weight: 700;
 
   span {
     color: var(--color-blue);
   }
-}
-
-h3, .heading {
-  font-size: 24px;
-  line-height: 140%;
-  font-weight: 700;
-  letter-spacing: 0.24px;
-}
-
-h4 {
-  font-size: 18px;
-  line-height: 140%;
-  font-weight: 700;
-  letter-spacing: 0.18px;
-}
-
-h5 {
-  font-size: 16px;
-  line-height: 140%;
-  font-weight: 700;
-  letter-spacing: 0.16px;
-}
-
-h6 {
-  font-size: 14px;
-  line-height: 140%;
-  font-weight: 700;
-  letter-spacing: 0.14px;
 }
 

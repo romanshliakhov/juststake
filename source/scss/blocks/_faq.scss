@@ -2,20 +2,26 @@
   margin-bottom: 70px;
   display: flex;
   flex-direction: column;
-  grid-gap: 60px;
+  grid-gap: clamp(40px, 5.859vw, 60px);
 
   &__lists {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 45px;
+    grid-gap: clamp(30px, 3.125vw, 45px);
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 100%;
+      grid-gap: 0;
+    }
   }
 
-  // &__questions {
-  //   width: 100%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   grid-gap: 30px;
-  // }
+  &__questions:first-child {
+    @media screen and (max-width: 768px) {
+      .faq__questions-item:last-child {
+        border-bottom: 1px solid var(--color-dark-bg);
+      }
+    }
+  }
 
   &__questions-item {
     width: 100%;

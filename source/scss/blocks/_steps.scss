@@ -4,19 +4,31 @@
   flex-direction: column;
   grid-gap: 60px;
 
+  @media screen and (max-width: 768px) {
+    margin-bottom: clamp(80px, 13.021vw, 100px);
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    grid-gap: 20px;
+    grid-gap: 15px 20px;
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 100%;
+    }
 
     &-item {
-      padding: 38px 30px 55px;
+      padding: 38px clamp(25px, 2.083vw, 30px) clamp(25px, 3.819vw, 55px);
       display: flex;
       flex-direction: column;
-      grid-gap: 35px;
+      grid-gap: clamp(25px, 4.557vw, 35px);
       background-color: var(--color-dark-bg);
       border-radius: 21px;
+
+      @media screen and (max-width: 767px) {
+        padding-bottom: 55px;
+      }
     }
 
     &-counter {
