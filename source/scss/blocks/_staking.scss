@@ -42,37 +42,6 @@
 
 
 
-.breadcrumbs {
-  display: flex;
-  align-items: center;
-  gap: 5px
-}
-
-.breadcrumbs a,
-.breadcrumbs span {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 21px
-}
-
-.breadcrumbs a {
-  gap: 5px
-}
-
-.breadcrumbs a::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  display: block;
-  background-image: url(../images/angle-right-small.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain
-}
 
 .tooltip {
   position: relative;
