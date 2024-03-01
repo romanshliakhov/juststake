@@ -44,7 +44,12 @@
   &__details {
     display: flex;
     align-items: center;
-    grid-gap: 30px;
+    flex-wrap: wrap;
+    grid-gap: 20px 30px;
+
+    @media screen and (max-width: 1052px) {
+      justify-content: space-between;
+    }
   }
 
   &__detail {
