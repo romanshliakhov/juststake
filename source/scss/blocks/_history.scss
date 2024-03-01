@@ -19,21 +19,39 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 100px;
       align-items: center;
-      padding-left: 25px;
-      padding-right: 39px;
+      padding-left: clamp(10px, 2.441vw, 25px);
+      padding-right:clamp(14px, 3.809vw, 39px);
+
+      @media screen and (max-width: 767px) {
+        grid-template-columns: 50px 70px 42px 1fr 1fr;
+        grid-gap: 15px;
+
+        .bonus {
+          text-transform: capitalize;
+
+          span {
+            display: none;
+          }
+        }
+      }
     }
 
     &-tbody {
-      padding: 19px 39px 17px 36px;
+      padding: clamp(15px, 1.855vw, 19px) clamp(16px, 3.809vw, 39px) 17px clamp(16px, 3.516vw, 36px) ;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 100px;
       align-items: center;
       background-color: var(--color-dark);
       border-radius: 21px;
+
+      @media screen and (max-width: 767px) {
+        grid-template-columns: 50px 70px 42px 1fr 1fr;
+        grid-gap: 15px;
+      }
     }
 
     &-head {
-      font-size: 14px;
+      font-size: clamp(12px, 1.823vw, 14px);
       line-height: 150%;
       color: var(--color-grey);
     }
@@ -42,15 +60,33 @@
       display: flex;
       align-items: center;
       grid-gap: 10px;
+      font-size: clamp(12px, 1.823vw, 14px);
+      line-height: 150%;
 
-      svg {
-        display: none;
+      .crypto__icon {
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
       }
     }
 
     .status {
       justify-content: flex-end;
       text-align: right;
+
+      svg {
+        display: none;
+      }
+
+      @media screen and (max-width: 767px) {
+        svg {
+          display: flex;
+        }
+
+        span {
+          display: none;
+        }
+      }
     }
 
     .data {
@@ -59,6 +95,10 @@
           display: none;
         }
       }
+    }
+
+    .bonus {
+      text-wrap: nowrap;
     }
   }
 }
