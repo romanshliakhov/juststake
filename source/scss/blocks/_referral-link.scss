@@ -1,5 +1,5 @@
 .referral-link {
-  padding: 20px 29px 45px 25px;
+  padding: 20px clamp(23px, 2.014vw, 29px) clamp(20px, 3.125vw, 45px) 25px;
   display: flex;
   flex-direction: column;
   grid-gap: 24px;
@@ -16,6 +16,11 @@
     display: grid;
     grid-template-columns: 1fr 151px;
     align-items: center;
+
+    @media screen and (max-width: 1052px) {
+      grid-template-columns: 100%;
+      grid-gap: 20px;
+    }
   }
 
   &__info {
